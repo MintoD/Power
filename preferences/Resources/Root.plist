@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>items</key>
+		<array>
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>label</key>
+				<string>I want to:</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSLinkCel</string>
+				<key>action</key>
+				<string>respring</string>
+				<key>label</key>
+				<string>Respring</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSLinkCel</string>
+				<key>action</key>
+				<string>reboot</string>
+				<key>label</key>
+				<string>Reboot</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSLinkCel</string>
+				<key>action</key>
+				<string>shutdown</string>
+				<key>label</key>
+				<string>Shutdown</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>footerText</key>
+				<string>MintoD © 2022</string>
+				<key>footerAlignment</key>
+				<integer>1</integer>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>pushToView:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>pushToPlist</key>
+				<string>Support</string>
+				<key>label</key>
+				<string>Support &amp; Donations</string>
+				<key>key</key>
+				<string>support</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>detail</key>
+				<string>CSPChangeLogController</string>
+				<key>isController</key>
+				<true/>
+				<key>label</key>
+				<string>ChangeLog</string>
+				<key>changes</key>
+				<array>
+					<dict>
+						<key>1.0.0</key>
+						<array>
+							<string>initial release</string>
+						</array>
+					</dict>
+				</array>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSStaticTextCell</string>
+				<key>cellClass</key>
+				<string>CSPVersionCell</string>
+				<key>bundleID</key>
+				<string>com.mintod.power</string>
+				<key>label</key>
+				<string>Version:</string>
+			</dict>
+
+		</array>
+		<key>title</key>
+		<string>Power</string>
+	</dict>
+</plist>

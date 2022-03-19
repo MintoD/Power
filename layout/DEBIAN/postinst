@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "Setting permissions"
+
+chown root:wheel /usr/libexec/power
+chmod +s /usr/libexec/power
+
+echo "Finished installation!"
+
+exit 0

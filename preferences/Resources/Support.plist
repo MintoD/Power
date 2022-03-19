@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+
+		<key>items</key>
+		<array>
+
+			<dict>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>cellClass</key>
+				<string>CSPDeveloperCell</string>
+				<key>action</key>
+				<string>openInBrowser:</string>
+				<key>username</key>
+				<string>MintoD</string>
+				<key>provider</key>
+				<string>0</string>
+				<key>height</key>
+				<string>81</string>
+				<key>devName</key>
+				<string>MintoD</string>
+				<key>devTitle</key>
+				<string>Nguyen Minh Tho</string>
+				<key>devSubtitle</key>
+				<string>Developer</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>label</key>
+				<string>Donations</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>openInBrowser:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>cellClass</key>
+				<string>CSPCalloutCell</string>
+				<key>calloutColor</key>
+				<string>#2ecc71</string>
+				<key>url</key>
+				<string>https://www.buymeacoffee.com/MintoD</string>
+				<key>icon</key>
+				<string/>
+				<key>label</key>
+				<string>Buy me a coffee</string>
+			</dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>label</key>
+				<string>Support</string>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>openInBrowser:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>url</key>
+				<string>https://github.com/MintoD/Power/issues</string>
+				<key>label</key>
+				<string>Submit an Issue</string>
+				<key>sublabel</key>
+                <string>Report a bug on GitHub and I'll fix it as soon as possible</string>
+			</dict>
+
+            <dict>
+                <key>action</key>
+                <string>email:</string>
+                <key>cell</key>
+                <string>PSLinkCell</string>
+                <key>mailto</key>
+                <string>mailto:tobythedev7@outlook.com</string>
+                <key>includeLogs</key>
+                <true/>
+                <key>label</key>
+                <string>Email Support</string>
+				<key>sublabel</key>
+                <string>Need help? Send me an email and I'll help you.</string>
+            </dict>
+
+			<dict>
+				<key>cell</key>
+				<string>PSGroupCell</string>
+				<key>label</key>
+				<string>Contact</string>
+				<key>footerText</key>
+				<string>MintoD © 2022</string>
+				<key>footerAlignment</key>
+				<integer>1</integer>
+			</dict>
+
+			<dict>
+				<key>action</key>
+				<string>openInBrowser:</string>
+				<key>cell</key>
+				<string>PSLinkCell</string>
+				<key>url</key>
+				<string>https://twitter.com/M1ntoD</string>
+				<key>icon</key>
+				<string/>
+				<key>label</key>
+				<string>@M1ntoD</string>
+				<key>sublabel</key>
+                <string>Follow me on twitter</string>
+			</dict>
+
+		</array>
+		
+		<key>title</key>
+		<string>Support &amp; Donations</string>
+	</dict>
+</plist>

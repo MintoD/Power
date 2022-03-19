@@ -1,0 +1,13 @@
+Package: com.mintod.power
+Name: Power
+Depends: firmware (>= 11.0), mobilesubstrate, preferenceloader, com.creaturecoding.libcspreferences
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Power is a simple iOS tweak that allows you respring, reboot, shutdown, ... in Settings app.
+Maintainer: MintoD
+Author: MintoD
+Section: Tweaks
+dev: MintoD
+Homepage: https://mintod.github.io/repo/
+Depiction: https://mintod.github.io/repo/packages/power
+Icon: https://mintod.github.io/repo/assets/img/power.png
