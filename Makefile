@@ -1,6 +1,7 @@
-ARCHS = arm64 arm64e
+ARCHS = arm64
 TARGET = iphone:clang:latest:11.0
 
+FINALPACKAGE=1
 DEBUG = 0
 GO_EASY_ON_ME = 0
 #THEOS_DEVICE_IP = 192.168.1.8
