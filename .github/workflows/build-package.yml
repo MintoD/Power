@@ -9,29 +9,19 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v3
     
     - name: Install depends package
-      run: sudo apt install build-essential fakeroot libtinfo5 libz3-dev rsync curl perl unzip git zstd
+      run: brew install ldid xz
       
     - name: Set up THEOS environment variable
-      run: echo "export THEOS=~/theos" >> ~/.profile
+      run: echo "export THEOS=~/theos" >> ~/.zprofile
       
     - name: Clone Theos
       run: git clone --recursive https://github.com/theos/theos.git $THEOS
-      
-    - name: Get a toolchain
-      run: |
-        curl -LO https://github.com/CRKatri/llvm-project/releases/download/swift-5.3.2-RELEASE/swift-5.3.2-RELEASE-ubuntu20.04.tar.zst
-        TMP=$(mktemp -d)
-        tar -xvf swift-5.3.2-RELEASE-ubuntu20.04.tar.zst -C $TMP
-        mkdir -p $THEOS/toolchain/linux/iphone $THEOS/toolchain/swift
-        mv $TMP/swift-5.3.2-RELEASE-ubuntu20.04/* $THEOS/toolchain/linux/iphone/
-        ln -s $THEOS/toolchain/linux/iphone $THEOS/toolchain/swift
-        rm -r swift-5.3.2-RELEASE-ubuntu20.04.tar.zst $TMP
         
     - name: Get an iOS SDK
       run: |
