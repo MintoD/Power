@@ -24,7 +24,7 @@ jobs:
       run: git clone --recursive https://github.com/theos/theos.git $THEOS
         
     - name: Get an iOS SDK
-      run: |
+      run: | 
         curl -LO https://github.com/theos/sdks/archive/master.zip
         TMP=$(mktemp -d)
         unzip master.zip -d $TMP
